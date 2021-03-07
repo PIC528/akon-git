@@ -19,7 +19,12 @@ import io.restassured.specification.RequestSpecification;
 public class Api {
 	HashMap<String ,Object> query = new HashMap<>();
 	//借助ResquestSpecification完成基础的初始化，保存resquestSpecification对象，就可以在很多地方复用。
-	public RequestSpecification requestSpecification = given();
+	//public RequestSpecification requestSpecification = given();
+	
+	public RequestSpecification getDefaultRequestSpecification() {
+		return given().log().all();
+	}
+	/*
 	public Response set() {
 		//找到所有集合，对每一个entry(输入)做一个循环,遍历它的参数。
 		requestSpecification =  given().log().all();
@@ -28,6 +33,7 @@ public class Api {
 		});
 		return requestSpecification.when().request("get","baidu.com");
 	}
+	*/
 	//对于复杂的JSON，提供一个模板封装方法
 	//给一个模板（文件），hashmap里存储着需要的值
 	public static String template(String path, HashMap<String,Object> map) {
@@ -54,7 +60,7 @@ public class Api {
 		//read:根据给定的文件，找到需要的内容
 		String method = documentContext.read("method");
 		String url = documentContext.read("url");
-		return requestSpecification.when().request(method,url);
+		return getDefaultRequestSpecification().when().request(method,url);
 		//选择request是因为它没有具体要求是get或者post
 	}
 	public  Response templateFromSwagger(String path,String urlPath, HashMap<String,Object> map) {
@@ -68,13 +74,15 @@ public class Api {
 		});
 		String method = documentContext.read("method");
 		String url = documentContext.read("url");
-		return requestSpecification.when().request(method,url);
+		return getDefaultRequestSpecification().when().request(method,url);
 	}
 	
 	public  Response templateFromYaml(String path,HashMap<String,Object> map) {
 		//todo:根据yaml生成接口定义并发送
 		ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
 		//获取实例并以yaml格式打印出来
+		//1.从配置文件读取restful数据
+		//2.对数据进行二次修改，根据map，更新需要的值
 			try {
 				//读取一个默认的配置文件，交给WeworkConfig的一个实例，并把实例返回
 				Restful restful = mapper.readValue(WeworkConfig.class.getResourceAsStream(path),Restful.class);
@@ -86,15 +94,38 @@ public class Api {
 				}
 				//借助这个方法重新拼装一个接口请求
 				//借助foreach不断追加参数
+				
+				//如果是post方法
+				if(restful.method.toLowerCase().contains("post")) {
+					if(map.containsKey("_body")){
+					restful.body = map.get("_body").toString();
+					}
+					if(map.containsKey("_file")){
+						//如果包含文件先删除文件，再读出文件路径，再用map结构修改
+						String filePath = map.get("_file").toString();
+						map.remove("_file");
+						restful.body = template(filePath,map);
+					}
+					
+				}
+		//3.将取出的值进行拼装
+				RequestSpecification requestSpecification = getDefaultRequestSpecification();
+				if(restful.query!=null)
 				restful.query.entrySet().forEach(entry->{
-						this.requestSpecification = 
-						this.requestSpecification.queryParam(entry.getKey(), entry.getValue());
+						requestSpecification.queryParam(entry.getKey(), entry.getValue());
 						//为保证传入的参数都被存储下来，所以需要重新追加赋值，
 						//也就是“this.requestSpecification =”这部分的作业
 				});
 				//上面就以及获取了所有需要的参数，接下来就要发送请求了
 				//需要方法和url
-				return this.requestSpecification.log().all().request(restful.method,restful.url)
+				//如果restful.body不为空，说明上面确实写入了body,即是个post请求，那么把body也加到请求里
+				//如果是get请求，body是为空的，跳过这一步
+				if(restful.body!=null) {
+					requestSpecification.body(restful.body);
+				}
+
+				return requestSpecification.log().all()
+						.when().request(restful.method,restful.url)
 						.then().log().all().extract().response();
 				
 			} catch (IOException e) {

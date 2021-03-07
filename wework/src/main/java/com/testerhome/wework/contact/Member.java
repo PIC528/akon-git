@@ -6,8 +6,7 @@ public class Member extends Contact{
 	public Response create(HashMap<String,Object> map) {
 		//模板引擎
 		String body = template("/data/member.json",map);
-		reset();
-		return requestSpecification
+		return getDefaultRequestSpecification()
 			.body(body)
 			.when().post("https://qyapi.weixin.qq.com/cgi-bin/user/create")
 			.then().log().all().extract().response();
