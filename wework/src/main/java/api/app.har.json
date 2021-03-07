@@ -1,0 +1,604 @@
+{
+  "log": {
+    "version": "1.2",
+    "creator": {
+      "name": "WebInspector",
+      "version": "537.36"
+    },
+    "pages": [],
+    "entries": [
+      {
+        "_initiator": {
+          "type": "script",
+          "stack": {
+            "callFrames": [
+              {
+                "functionName": "",
+                "scriptId": "140",
+                "url": "https://wwcdn.weixin.qq.com/node/wwopen/wwopenmng/js/3rd/sentry/_$$_bundle$da345a81.js,vue$927909f1.js",
+                "lineNumber": 16,
+                "columnNumber": 53800
+              },
+              {
+                "functionName": "",
+                "scriptId": "140",
+                "url": "https://wwcdn.weixin.qq.com/node/wwopen/wwopenmng/js/3rd/sentry/_$$_bundle$da345a81.js,vue$927909f1.js",
+                "lineNumber": 16,
+                "columnNumber": 16368
+              },
+              {
+                "functionName": "eval",
+                "scriptId": "152",
+                "url": "",
+                "lineNumber": 7,
+                "columnNumber": 4320
+              },
+              {
+                "functionName": "e.exports",
+                "scriptId": "152",
+                "url": "",
+                "lineNumber": 7,
+                "columnNumber": 2530
+              },
+              {
+                "functionName": "e.exports",
+                "scriptId": "152",
+                "url": "",
+                "lineNumber": 7,
+                "columnNumber": 8070
+              }
+            ],
+            "parent": {
+              "description": "Promise.then",
+              "callFrames": [
+                {
+                  "functionName": "c.request",
+                  "scriptId": "152",
+                  "url": "",
+                  "lineNumber": 7,
+                  "columnNumber": 765
+                },
+                {
+                  "functionName": "eval",
+                  "scriptId": "152",
+                  "url": "",
+                  "lineNumber": 0,
+                  "columnNumber": 2584
+                },
+                {
+                  "functionName": "eval",
+                  "scriptId": "164",
+                  "url": "",
+                  "lineNumber": 0,
+                  "columnNumber": 2446
+                },
+                {
+                  "functionName": "w",
+                  "scriptId": "142",
+                  "url": "https://wwcdn.weixin.qq.com/node/wwopen/wwopenmng/_$$_js/3rd/babel-polyfill$fe30eb34.js,js/modules/jquery/jquery/1.11.3/jquery.min$8bd37c69.js,comm/3rd/mail.seajs/sea$7e17d8c1.js,js/developer/raw/seajs.config$b1238951.js",
+                  "lineNumber": 0,
+                  "columnNumber": 98557
+                },
+                {
+                  "functionName": "",
+                  "scriptId": "142",
+                  "url": "https://wwcdn.weixin.qq.com/node/wwopen/wwopenmng/_$$_js/3rd/babel-polyfill$fe30eb34.js,js/modules/jquery/jquery/1.11.3/jquery.min$8bd37c69.js,comm/3rd/mail.seajs/sea$7e17d8c1.js,js/developer/raw/seajs.config$b1238951.js",
+                  "lineNumber": 0,
+                  "columnNumber": 98345
+                },
+                {
+                  "functionName": "O.forEach.t.<computed>",
+                  "scriptId": "142",
+                  "url": "https://wwcdn.weixin.qq.com/node/wwopen/wwopenmng/_$$_js/3rd/babel-polyfill$fe30eb34.js,js/modules/jquery/jquery/1.11.3/jquery.min$8bd37c69.js,comm/3rd/mail.seajs/sea$7e17d8c1.js,js/developer/raw/seajs.config$b1238951.js",
+                  "lineNumber": 0,
+                  "columnNumber": 98737
+                },
+                {
+                  "functionName": "l",
+                  "scriptId": "164",
+                  "url": "",
+                  "lineNumber": 0,
+                  "columnNumber": 1195
+                },
+                {
+                  "functionName": "i",
+                  "scriptId": "164",
+                  "url": "",
+                  "lineNumber": 0,
+                  "columnNumber": 1398
+                }
+              ],
+              "parent": {
+                "description": "Promise.then",
+                "callFrames": [
+                  {
+                    "functionName": "l",
+                    "scriptId": "164",
+                    "url": "",
+                    "lineNumber": 0,
+                    "columnNumber": 1266
+                  },
+                  {
+                    "functionName": "i",
+                    "scriptId": "164",
+                    "url": "",
+                    "lineNumber": 0,
+                    "columnNumber": 1398
+                  },
+                  {
+                    "functionName": "eval",
+                    "scriptId": "164",
+                    "url": "",
+                    "lineNumber": 0,
+                    "columnNumber": 1457
+                  },
+                  {
+                    "functionName": "eval",
+                    "scriptId": "164",
+                    "url": "",
+                    "lineNumber": 0,
+                    "columnNumber": 1338
+                  },
+                  {
+                    "functionName": "v",
+                    "scriptId": "164",
+                    "url": "",
+                    "lineNumber": 0,
+                    "columnNumber": 2188
+                  },
+                  {
+                    "functionName": "i.default.postJSON",
+                    "scriptId": "164",
+                    "url": "",
+                    "lineNumber": 0,
+                    "columnNumber": 3218
+                  },
+                  {
+                    "functionName": "eval",
+                    "scriptId": "198",
+                    "url": "",
+                    "lineNumber": 0,
+                    "columnNumber": 1538
+                  },
+                  {
+                    "functionName": "w",
+                    "scriptId": "142",
+                    "url": "https://wwcdn.weixin.qq.com/node/wwopen/wwopenmng/_$$_js/3rd/babel-polyfill$fe30eb34.js,js/modules/jquery/jquery/1.11.3/jquery.min$8bd37c69.js,comm/3rd/mail.seajs/sea$7e17d8c1.js,js/developer/raw/seajs.config$b1238951.js",
+                    "lineNumber": 0,
+                    "columnNumber": 98557
+                  },
+                  {
+                    "functionName": "",
+                    "scriptId": "142",
+                    "url": "https://wwcdn.weixin.qq.com/node/wwopen/wwopenmng/_$$_js/3rd/babel-polyfill$fe30eb34.js,js/modules/jquery/jquery/1.11.3/jquery.min$8bd37c69.js,comm/3rd/mail.seajs/sea$7e17d8c1.js,js/developer/raw/seajs.config$b1238951.js",
+                    "lineNumber": 0,
+                    "columnNumber": 98345
+                  },
+                  {
+                    "functionName": "O.forEach.t.<computed>",
+                    "scriptId": "142",
+                    "url": "https://wwcdn.weixin.qq.com/node/wwopen/wwopenmng/_$$_js/3rd/babel-polyfill$fe30eb34.js,js/modules/jquery/jquery/1.11.3/jquery.min$8bd37c69.js,comm/3rd/mail.seajs/sea$7e17d8c1.js,js/developer/raw/seajs.config$b1238951.js",
+                    "lineNumber": 0,
+                    "columnNumber": 98737
+                  },
+                  {
+                    "functionName": "o",
+                    "scriptId": "198",
+                    "url": "",
+                    "lineNumber": 0,
+                    "columnNumber": 493
+                  },
+                  {
+                    "functionName": "u",
+                    "scriptId": "198",
+                    "url": "",
+                    "lineNumber": 0,
+                    "columnNumber": 696
+                  },
+                  {
+                    "functionName": "eval",
+                    "scriptId": "198",
+                    "url": "",
+                    "lineNumber": 0,
+                    "columnNumber": 755
+                  },
+                  {
+                    "functionName": "eval",
+                    "scriptId": "198",
+                    "url": "",
+                    "lineNumber": 0,
+                    "columnNumber": 636
+                  },
+                  {
+                    "functionName": "eval",
+                    "scriptId": "198",
+                    "url": "",
+                    "lineNumber": 0,
+                    "columnNumber": 1907
+                  },
+                  {
+                    "functionName": "eval",
+                    "scriptId": "194",
+                    "url": "",
+                    "lineNumber": 0,
+                    "columnNumber": 11270
+                  },
+                  {
+                    "functionName": "w",
+                    "scriptId": "142",
+                    "url": "https://wwcdn.weixin.qq.com/node/wwopen/wwopenmng/_$$_js/3rd/babel-polyfill$fe30eb34.js,js/modules/jquery/jquery/1.11.3/jquery.min$8bd37c69.js,comm/3rd/mail.seajs/sea$7e17d8c1.js,js/developer/raw/seajs.config$b1238951.js",
+                    "lineNumber": 0,
+                    "columnNumber": 98557
+                  },
+                  {
+                    "functionName": "",
+                    "scriptId": "142",
+                    "url": "https://wwcdn.weixin.qq.com/node/wwopen/wwopenmng/_$$_js/3rd/babel-polyfill$fe30eb34.js,js/modules/jquery/jquery/1.11.3/jquery.min$8bd37c69.js,comm/3rd/mail.seajs/sea$7e17d8c1.js,js/developer/raw/seajs.config$b1238951.js",
+                    "lineNumber": 0,
+                    "columnNumber": 98345
+                  },
+                  {
+                    "functionName": "O.forEach.t.<computed>",
+                    "scriptId": "142",
+                    "url": "https://wwcdn.weixin.qq.com/node/wwopen/wwopenmng/_$$_js/3rd/babel-polyfill$fe30eb34.js,js/modules/jquery/jquery/1.11.3/jquery.min$8bd37c69.js,comm/3rd/mail.seajs/sea$7e17d8c1.js,js/developer/raw/seajs.config$b1238951.js",
+                    "lineNumber": 0,
+                    "columnNumber": 98737
+                  },
+                  {
+                    "functionName": "p",
+                    "scriptId": "194",
+                    "url": "",
+                    "lineNumber": 0,
+                    "columnNumber": 6384
+                  },
+                  {
+                    "functionName": "o",
+                    "scriptId": "194",
+                    "url": "",
+                    "lineNumber": 0,
+                    "columnNumber": 6587
+                  },
+                  {
+                    "functionName": "eval",
+                    "scriptId": "194",
+                    "url": "",
+                    "lineNumber": 0,
+                    "columnNumber": 6646
+                  },
+                  {
+                    "functionName": "eval",
+                    "scriptId": "194",
+                    "url": "",
+                    "lineNumber": 0,
+                    "columnNumber": 6527
+                  },
+                  {
+                    "functionName": "submitInvoke",
+                    "scriptId": "194",
+                    "url": "",
+                    "lineNumber": 0,
+                    "columnNumber": 11354
+                  },
+                  {
+                    "functionName": "Ht",
+                    "scriptId": "147",
+                    "url": "",
+                    "lineNumber": 6,
+                    "columnNumber": 11375
+                  },
+                  {
+                    "functionName": "n",
+                    "scriptId": "147",
+                    "url": "",
+                    "lineNumber": 6,
+                    "columnNumber": 13126
+                  },
+                  {
+                    "functionName": "i._wrapper",
+                    "scriptId": "147",
+                    "url": "",
+                    "lineNumber": 6,
+                    "columnNumber": 44387
+                  },
+                  {
+                    "functionName": "o",
+                    "scriptId": "140",
+                    "url": "https://wwcdn.weixin.qq.com/node/wwopen/wwopenmng/js/3rd/sentry/_$$_bundle$da345a81.js,vue$927909f1.js",
+                    "lineNumber": 16,
+                    "columnNumber": 48658
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "_priority": "High",
+        "_resourceType": "xhr",
+        "cache": {},
+        "connection": "4493",
+        "request": {
+          "method": "POST",
+          "url": "https://open.work.weixin.qq.com/wwopen/devetool/interface/invoke?lang=zh_CN&ajax=1&f=json&random=188914",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": ":method",
+              "value": "POST"
+            },
+            {
+              "name": ":authority",
+              "value": "open.work.weixin.qq.com"
+            },
+            {
+              "name": ":scheme",
+              "value": "https"
+            },
+            {
+              "name": ":path",
+              "value": "/wwopen/devetool/interface/invoke?lang=zh_CN&ajax=1&f=json&random=188914"
+            },
+            {
+              "name": "content-length",
+              "value": "512"
+            },
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not\\\"A\\\\Brand\";v=\"99\""
+            },
+            {
+              "name": "accept",
+              "value": "application/json, text/plain, */*"
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?1"
+            },
+            {
+              "name": "user-agent",
+              "value": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Mobile Safari/537.36"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json"
+            },
+            {
+              "name": "origin",
+              "value": "https://open.work.weixin.qq.com"
+            },
+            {
+              "name": "sec-fetch-site",
+              "value": "same-origin"
+            },
+            {
+              "name": "sec-fetch-mode",
+              "value": "cors"
+            },
+            {
+              "name": "sec-fetch-dest",
+              "value": "empty"
+            },
+            {
+              "name": "referer",
+              "value": "https://open.work.weixin.qq.com/wwopen/devtool/interface/combine"
+            },
+            {
+              "name": "accept-encoding",
+              "value": "gzip, deflate, br"
+            },
+            {
+              "name": "accept-language",
+              "value": "zh-CN,zh;q=0.9"
+            },
+            {
+              "name": "cookie",
+              "value": "pgv_pvi=7554955264; pgv_pvid=6242522360; wwrtx.i18n_lan=zh; wwrtx.c_gdpr=0; _ga=GA1.2.1073132557.1614181501; wwrtx.ref=direct; wwrtx.refid=02900859; Hm_lvt_9364e629af24cb52acc78b43e8c9f77d=1614181501,1615124913; Hm_lpvt_9364e629af24cb52acc78b43e8c9f77d=1615124913; _gid=GA1.2.1726794065.1615124913; wwrtx.d2st=a7487737; wwrtx.sid=ltX3TBIo23BDgZAlRF1nkxXTGGNHCwvuW_7tcm5nwfTgBwGFmNhHW8O4U0FPnj8r; wwrtx.ltype=1; wxpay.corpid=1970325120354079; wxpay.vid=1688854057176462; wwrtx.vst=8oPWqql_dBFuvaQxCSByBHd-UVDD5KDmAuJKecrDthMq5FF-7S9fJbrD_iVi-SmXjxc_yMYk2P5qavLJdj-wABWPP10HcPONO2hoRFje1S556Mmo9ak9Kzpt0YXdz_YlUCl9STm30bmNwaKXJuKWliMstNnunghoBL690clB1KUQym6LChWfuhlp7rvs5tkFk69alrtRw7JdyHjr9imFRWGyWat7DrUuls2A_202E0SSIfoRuIK9wvjNUao3NgthVjMIxnkwVKUtXKiYuPQJvQ; wwrtx.vid=1688854057176462; ww_rtkey=8bgmrrf"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "lang",
+              "value": "zh_CN"
+            },
+            {
+              "name": "ajax",
+              "value": "1"
+            },
+            {
+              "name": "f",
+              "value": "json"
+            },
+            {
+              "name": "random",
+              "value": "188914"
+            }
+          ],
+          "cookies": [
+            {
+              "name": "pgv_pvi",
+              "value": "7554955264",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "pgv_pvid",
+              "value": "6242522360",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "wwrtx.i18n_lan",
+              "value": "zh",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "wwrtx.c_gdpr",
+              "value": "0",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "_ga",
+              "value": "GA1.2.1073132557.1614181501",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "wwrtx.ref",
+              "value": "direct",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "wwrtx.refid",
+              "value": "02900859",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "Hm_lvt_9364e629af24cb52acc78b43e8c9f77d",
+              "value": "1614181501,1615124913",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "Hm_lpvt_9364e629af24cb52acc78b43e8c9f77d",
+              "value": "1615124913",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "_gid",
+              "value": "GA1.2.1726794065.1615124913",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "wwrtx.d2st",
+              "value": "a7487737",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "wwrtx.sid",
+              "value": "ltX3TBIo23BDgZAlRF1nkxXTGGNHCwvuW_7tcm5nwfTgBwGFmNhHW8O4U0FPnj8r",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "wwrtx.ltype",
+              "value": "1",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "wxpay.corpid",
+              "value": "1970325120354079",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "wxpay.vid",
+              "value": "1688854057176462",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "wwrtx.vst",
+              "value": "8oPWqql_dBFuvaQxCSByBHd-UVDD5KDmAuJKecrDthMq5FF-7S9fJbrD_iVi-SmXjxc_yMYk2P5qavLJdj-wABWPP10HcPONO2hoRFje1S556Mmo9ak9Kzpt0YXdz_YlUCl9STm30bmNwaKXJuKWliMstNnunghoBL690clB1KUQym6LChWfuhlp7rvs5tkFk69alrtRw7JdyHjr9imFRWGyWat7DrUuls2A_202E0SSIfoRuIK9wvjNUao3NgthVjMIxnkwVKUtXKiYuPQJvQ",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "wwrtx.vid",
+              "value": "1688854057176462",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            },
+            {
+              "name": "ww_rtkey",
+              "value": "8bgmrrf",
+              "expires": null,
+              "httpOnly": false,
+              "secure": false
+            }
+          ],
+          "headersSize": -1,
+          "bodySize": 512,
+          "postData": {
+            "mimeType": "application/json",
+            "text": "{\"name\":\"获取部门列表\",\"url\":\"https://qyapi.weixin.qq.com/cgi-bin/department/list\",\"method\":\"GET\",\"parentId\":\"contact\",\"arguments\":[{\"name\":\"access_token\",\"must\":true,\"type\":\"area\",\"value\":\"mZ67f-_Me0d6noitRiHru9zRiIQbMcAFVo4wGbfNmQE_F50WnqB7WAS_HlGeTUXuNbAyoUn4pE20cI5duPA19xFLyIdkTYXUOb7h-wOYIHRmyipIQVm0n9qk2eA_rNbeVjyIlONY7IPami6sZ0rFLPIGkIiI2mddZ7qG48miePOncJL-GZd1x-WuJK9zeCuqfpJHoVA9gRVtsk395orswA\",\"desc\":\"调用接口凭证\"},{\"name\":\"id\",\"must\":false,\"type\":\"text\",\"value\":\"\",\"desc\":\"部门id\"}]}"
+          }
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "server",
+              "value": "nginx"
+            },
+            {
+              "name": "date",
+              "value": "Sun, 07 Mar 2021 14:03:07 GMT"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "content-length",
+              "value": "465"
+            },
+            {
+              "name": "etag",
+              "value": "W/\"1d1-qAHddulIuW5uhmVZNpeiuXH1tI8\""
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 465,
+            "mimeType": "application/json"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": -1,
+          "_transferSize": 578,
+          "_error": null
+        },
+        "serverIPAddress": "[2408:8756:3af0:2013::3f]",
+        "startedDateTime": "2021-03-07T14:03:09.015Z",
+        "time": 98.9670000053593,
+        "timings": {
+          "blocked": 4.686999999930151,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0.494,
+          "wait": 93.33699999894574,
+          "receive": 0.4490000064834021,
+          "_blocked_queueing": 3.674999999930151,
+          "_blocked_proxy": 0.375
+        }
+      }
+    ]
+  }
+}

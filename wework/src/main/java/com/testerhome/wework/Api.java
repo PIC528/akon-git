@@ -65,6 +65,7 @@ public class Api {
 	}
 	public  Response templateFromSwagger(String path,String urlPath, HashMap<String,Object> map) {
 		//todo:支持从swagger自动生成接口定义并发送
+		//todo:分析swagger coden
 		//与har一样，只不过读的是swagger.json文件
 		//这里的swagger文件并不是企业微信的，只是一个模板，这个方法也只是暂写
 		DocumentContext  documentContext = JsonPath.parse(Api.class
